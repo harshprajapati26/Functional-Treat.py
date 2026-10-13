@@ -7,10 +7,6 @@
 # Global variable
 total_values = 0
 
-
-# ----------------------------------------------------------
-# 1. User Defined Function
-# ----------------------------------------------------------
 def calculate_average(data):
     """Calculate the average of the dataset."""
     if len(data) == 0:
@@ -18,10 +14,6 @@ def calculate_average(data):
 
     return sum(data) / len(data)
 
-
-# ----------------------------------------------------------
-# 2. Find Duplicate Values
-# ----------------------------------------------------------
 def find_duplicates(data):
     """Find duplicate values from the dataset."""
 
@@ -33,10 +25,6 @@ def find_duplicates(data):
 
     return duplicates
 
-
-# ----------------------------------------------------------
-# 3. Find Unique Values
-# ----------------------------------------------------------
 def find_unique(data):
     """Display unique values from the dataset."""
 
@@ -48,10 +36,6 @@ def find_unique(data):
 
     return unique
 
-
-# ----------------------------------------------------------
-# 4. *args Function
-# ----------------------------------------------------------
 def show_values(*args):
     """Display multiple values using *args."""
 
@@ -60,10 +44,6 @@ def show_values(*args):
     for value in args:
         print(value)
 
-
-# ----------------------------------------------------------
-# 5. **kwargs Function
-# ----------------------------------------------------------
 def show_dataset_info(**kwargs):
     """Display dataset information using **kwargs."""
 
@@ -72,10 +52,6 @@ def show_dataset_info(**kwargs):
     for key, value in kwargs.items():
         print(key, ":", value)
 
-
-# ----------------------------------------------------------
-# 6. Recursive Factorial Function
-# ----------------------------------------------------------
 def factorial(number):
     """Calculate factorial using recursion."""
 
@@ -84,10 +60,6 @@ def factorial(number):
 
     return number * factorial(number - 1)
 
-
-# ----------------------------------------------------------
-# 7. Recursive Fibonacci Function
-# ----------------------------------------------------------
 def fibonacci(number):
     """Calculate Fibonacci number using recursion."""
 
@@ -99,10 +71,6 @@ def fibonacci(number):
 
     return fibonacci(number - 1) + fibonacci(number - 2)
 
-
-# ----------------------------------------------------------
-# 8. Lambda + Filter Function
-# ----------------------------------------------------------
 def filter_data(data, threshold):
     """Filter values greater than or equal to threshold."""
 
@@ -110,10 +78,6 @@ def filter_data(data, threshold):
 
     return result
 
-
-# ----------------------------------------------------------
-# 9. Lambda + Map Function
-# ----------------------------------------------------------
 def double_values(data):
     """Double every value using lambda and map."""
 
@@ -121,10 +85,6 @@ def double_values(data):
 
     return result
 
-
-# ----------------------------------------------------------
-# 10. Global Keyword
-# ----------------------------------------------------------
 def update_total(data):
     """Update the global total number of values."""
 
@@ -132,10 +92,6 @@ def update_total(data):
 
     total_values = len(data)
 
-
-# ----------------------------------------------------------
-# 11. Return Multiple Values
-# ----------------------------------------------------------
 def dataset_statistics(data):
     """Return minimum, maximum, sum and average."""
 
@@ -146,10 +102,6 @@ def dataset_statistics(data):
 
     return minimum, maximum, total, average
 
-
-# ----------------------------------------------------------
-# 12. Display 2D List
-# ----------------------------------------------------------
 def display_2d_list(data):
     """Display a 2D list in grid format."""
 
@@ -160,10 +112,6 @@ def display_2d_list(data):
             print(value, end=" ")
         print()
 
-
-# ----------------------------------------------------------
-# 13. Input 1D Data
-# ----------------------------------------------------------
 def input_1d_data():
     """Take 1D list input from the user."""
 
@@ -176,10 +124,6 @@ def input_1d_data():
 
     return data
 
-
-# ----------------------------------------------------------
-# 14. Input 2D Data
-# ----------------------------------------------------------
 def input_2d_data():
     """Take 2D list input from the user."""
 
@@ -201,12 +145,7 @@ def input_2d_data():
         data.append(row)
 
     return data
-
-
-# ==========================================================
-# MAIN PROGRAM
-# ==========================================================
-
+    
 print("**********************************************")
 print("     WELCOME TO FUNCTIONAL TREAT")
 print(" Data Analyzer and Transformer Program")
@@ -231,10 +170,6 @@ while True:
 
     choice = input("Please enter your choice: ")
 
-
-    # ======================================================
-    # OPTION 1 - INPUT DATA
-    # ======================================================
     if choice == "1":
 
         print("\nInput Data")
@@ -266,10 +201,6 @@ while True:
 
             print("\nInvalid choice!")
 
-
-    # ======================================================
-    # OPTION 2 - DATA SUMMARY
-    # ======================================================
     elif choice == "2":
 
         if len(data) == 0:
@@ -325,10 +256,6 @@ while True:
             print("\nValues after using map() and lambda:")
             print(doubled)
 
-
-    # ======================================================
-    # OPTION 3 - RECURSION
-    # ======================================================
     elif choice == "3":
 
         print("\nRecursion")
@@ -369,10 +296,6 @@ while True:
 
             print("\nInvalid choice!")
 
-
-    # ======================================================
-    # OPTION 4 - FILTER DATA
-    # ======================================================
     elif choice == "4":
 
         if len(data) == 0:
@@ -397,10 +320,6 @@ while True:
 
                 print(filtered)
 
-
-    # ======================================================
-    # OPTION 5 - SORT DATA
-    # ======================================================
     elif choice == "5":
 
         if len(data) == 0:
@@ -447,10 +366,6 @@ while True:
 
                 print("\nInvalid choice!")
 
-
-    # ======================================================
-    # OPTION 6 - MULTIPLE RETURN VALUES
-    # ======================================================
     elif choice == "6":
 
         if len(data) == 0:
@@ -468,10 +383,6 @@ while True:
             print("Sum of values:", total)
             print("Average value:", round(average, 2))
 
-
-    # ======================================================
-    # OPTION 7 - EXIT
-    # ======================================================
     elif choice == "7":
 
         print("\nThank you for using Functional Treat!")
@@ -479,10 +390,6 @@ while True:
 
         break
 
-
-    # ======================================================
-    # INVALID CHOICE
-    # ======================================================
     else:
 
         print("\nInvalid choice!")
